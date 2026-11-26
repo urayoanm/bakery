@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Secretos
+.env
+*.keystore
+local.properties
+
+# Generados
+build/
+node_modules/
+.gradle/
