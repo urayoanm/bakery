@@ -31,7 +31,7 @@
             <legend>Contact &amp; Pre-Orders</legend>
             <h1>Pre-orders &amp; questions</h1>
             <p>Fill out the form and we'll confirm within one business day. Cakes need 72 hours' notice.</p>
-            <form action="mailto:hello@northstarbakery.example" method="post" enctype="text/plain" onsubmit="return validateForm()">
+            <form action="mailto:hello@northstarbakery.example" method="post" enctype="text/plain" novalidate onsubmit="return validateForm(this)">
               <div>
                 <label for="name">Name</label>
               <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your Full Name">
@@ -71,8 +71,8 @@
               <button class="btn" type="submit">Send request</button>
             </div>
           </form>
+          </fieldset>
         </div>
-        </fieldset>
         <div>
           <div class="card">
             <h2>Find us</h2>
@@ -103,5 +103,6 @@
       <p>&copy; 2026 North Star Bakery. Baked by hand, shared with neighbors.</p>
     </div>
   </footer>
+  <script src="./js/main.js"></script>
 </body>
 </html>
